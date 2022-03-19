@@ -10,8 +10,8 @@ But I like chips :)
 # Components Lists
 
 - [x] Entrypoint
-- [x] Application
 - [x] Logging System
+- [x] Premake
 - [ ] Window Layer
     - [ ] Input
     - [ ] Events
@@ -38,7 +38,7 @@ Just ignore it and build again
 
 # Details
 
-## EntryPoint and Application
+## EntryPoint
 
 We hide the EntryPoint file in Chips Project 
 
@@ -52,9 +52,15 @@ Then EntryPoint will call your class's Run to run the Whole project
 
 ## Logging System
 
-We use **spdlog** to implement the logging system
+We use [spdlog](https://github.com/gabime/spdlog/tree/b1478d98f017f3a7644e6e3a16fab6a47a5c26ba) to implement the logging system
 
 And define two static loggers and micros to use it easily
 
-You can find this library at [spdlog](https://github.com/gabime/spdlog/tree/b1478d98f017f3a7644e6e3a16fab6a47a5c26ba)
+## Premake
+
+We use [premake-core](https://github.com/premake/premake-core) to generate project at platforms
+
+You can see  premake5.lua for our details
+
+or see [premake-wiki](https://github.com/premake/premake-core/wiki) for how to use premake
 
