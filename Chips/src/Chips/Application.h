@@ -3,7 +3,7 @@
 
 namespace Chips {
 
-	class CHIPS_API Application
+	class CPS_API Application
 	{
 	public:
 		Application();

@@ -6,6 +6,8 @@ extern Chips::Application* Chips::CreateApplication();
 
 int main(int argc, char** argv)
 {
+	Chips::Log::Init();
+
 	auto app = Chips::CreateApplication();
 	app->Run();
 	delete app;
